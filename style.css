@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background: hsl(28.89deg 52.94% 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Recipe_Container {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
