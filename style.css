@@ -34,6 +34,7 @@ body {
     border-radius: 15px;
     padding: 2rem;
     max-width: 700px;
+    scale: 0.58;
 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -41,13 +42,16 @@ body {
     font-style: normal;
 }
 
-.Main_Recipe > h1 {
+.Main_Recipe>h1 {
     font-family: "Old Roman W00 Bold";
     font-size: 330%;
 }
 
-.Ingredients > h2, .Instructions > h2, .Nutritions > h2 {
+.Ingredients>h2,
+.Instructions>h2,
+.Nutritions>h2 {
     font-family: "Old Roman W00 Bold";
+    color: rgb(136, 77, 68);
 }
 
 .Main_Recipe>p {
@@ -89,11 +93,10 @@ body {
 .Preparation_Time>ul>li {
     padding-bottom: .5rem;
     padding-left: .5rem;
-    /* background: red; */
 }
 
 .Preparation_Time {
-    background: #fff7fc;
+    background: #faf0f6;
     border-radius: 10px;
     padding: 1rem;
     margin-top: 1rem;
@@ -111,7 +114,24 @@ body {
     padding: 1rem 0;
 }
 
+/* .Nutrition_Items > p {
+    margin-left: 2rem;
+    margin-right: 5rem;
+} */
+
+
+.Nutrition_Items>b {
+    color: rgb(136, 77, 68);
+}
+
 .Nutrition_Items:last-child {
     border: none;
     padding-bottom: 0;
-  }
+}
+
+@media (max-width: 425px) {
+    .Recipe_Container {
+        scale: none;
+        margin-top: 52rem;
+    }
+}
